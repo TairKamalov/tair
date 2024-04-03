@@ -4,18 +4,11 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
-
-
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
     
 
-lottie_coding = "https://lottie.host/b0a33975-197e-4e27-8918-c134527e372b/SfOxUleAFK.json"
+
 img_contact_from = Image.open("images/profilo.png")
-img_lottie_animation = Image.open("images/tair.png")
+
 
 
 with st.container():
